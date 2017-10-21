@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.android.R;
+import com.android.anim.viewAnim.ViewAnimGuideActivity;
 
 public class AnimGuideActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class AnimGuideActivity extends AppCompatActivity {
         findViewById(R.id.button_view_anim).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AnimGuideActivity.this, ));
+                startActivity(new Intent(AnimGuideActivity.this, ViewAnimGuideActivity.class));
             }
         });
     }

@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.anim.AnimGuideActivity">
+    tools:context="com.android.anim.viewAnim.ViewAnimGuideActivity">
 
     <Button
-        android:id="@+id/button_view_anim"
+        android:id="@+id/button_interpolator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Animation" />
+        android:text="Interpolator" />
 
 </LinearLayout>
