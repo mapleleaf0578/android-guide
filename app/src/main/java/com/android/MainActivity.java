@@ -1,11 +1,13 @@
 package com.android;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.v4.app.FragmentActivity;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
-public class MainActivity extends FragmentActivity {
+import com.android.anim.AnimGuideActivity;
+
+public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     @Override
@@ -13,10 +15,12 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d(TAG, getFilesDir().getPath());
-        Log.d(TAG, getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS).getPath());
-        Environment.getExternalStoragePublicDirectory();
-        Environment.getExternalStorageDirectory()
+        findViewById(R.id.button_anim).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AnimGuideActivity.class));
+            }
+        });
 
     }
 }
