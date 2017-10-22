@@ -53,12 +53,12 @@ public class InterpolatorActivity extends AppCompatActivity {
     }
 
     private void setChart(Interpolator interpolator, @ColorInt int color) {
-        Chart<LineData> adiChart = InterpolatorHelper.getChart(this, xs, interpolator, color);
-        ll.addView(adiChart);
-        LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) adiChart.getLayoutParams();
+        Chart<LineData> chart = InterpolatorHelper.getChart(this, xs, interpolator, color);
+        ll.addView(chart);
+        LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) chart.getLayoutParams();
         lp.height = 1000;
         lp.bottomMargin = 100;
         lp.topMargin = 100;
-        adiChart.invalidate();
+        chart.invalidate();
     }
 }

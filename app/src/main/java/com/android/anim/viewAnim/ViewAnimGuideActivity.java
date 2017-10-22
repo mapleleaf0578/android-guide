@@ -19,5 +19,18 @@ public class ViewAnimGuideActivity extends AppCompatActivity {
                 startActivity(new Intent(ViewAnimGuideActivity.this, InterpolatorActivity.class));
             }
         });
+        findViewById(R.id.button_anim_set).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ViewAnimGuideActivity.this, AnimSetActivity.class));
+            }
+        });
+
+        findViewById(R.id.button_drawable_animation).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ViewAnimGuideActivity.this, DrawableAnimationActivity.class));
+            }
+        });
     }
 }

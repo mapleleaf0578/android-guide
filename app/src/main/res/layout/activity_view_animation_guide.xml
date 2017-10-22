@@ -13,4 +13,16 @@
         android:layout_height="wrap_content"
         android:text="Interpolator" />
 
+    <Button
+        android:id="@+id/button_anim_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xml animation" />
+
+    <Button
+        android:id="@+id/button_drawable_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawable animation" />
+
 </LinearLayout>
